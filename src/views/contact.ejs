@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- usamos GOOGLE FONTS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+</head>
+
+<body>
+    <!-- HEADER......-->
+    <%-include('template/header')%>
+    <!-- FORMULARIO......-->
+    <section class="contenedorFlex">
+        <div class="contenido">
+            <div class="formulario">
+                <h2>Ingrese su Información Personal y consulta</h2>
+                <form action="/send-email" method="post" onsubmit="return validarFormulario()" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Name: </label>
+                        <input id="name" name="name" type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastname" class="form-label">Last Name: </label>
+                        <input id="lastname" name="lastname" type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input id="email" name="email" type="email" class="form-control">
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="request" class="form-label">Request</label>
+                        <input id="request" name="request" type="text" class="form-control">
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input id="checkBox" name="checkBox" class="form-check-input" type="checkbox">
+                            <label class="form-check-label" for="gridCheck">
+                                No soy un robot
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-secondary"> Submit </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER......-->
+    <%-include('template/footer')%>
+
+    <!-- SCRIPTS..-->
+    <script src="/assets/js/contact.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="/components/contact.js"></script>
+
+</body>
+
+</html>
