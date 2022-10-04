@@ -1,1 +1,43 @@
+Summary (Resumen)
+FrontEnd es un ViewPort (Página web) creado/a con NODE JS. Las rutas se crearon y configuraron con el fin de que puedan interactuar entre sí, basandonos en una organización MVC. Se agregaron también accesos a redes sociales  como Linkedin que tienen que ver con el pryecto. Se utilizo la posibilidad de enviar un mail con ethereal los datos se pusieron en un .env contando con la posibilidad de que sea privado e ser necesario. 
 
+
+
+Nodemon (Para Empezar)
+Instale Node JS en su computador y ejecute en este para dar comienzo al proyecto.
+
+Ejecutando en consola #Nodemon App en la carpeta SRC
+
+Install dependencies (Instalar Dependencias)
+npm init para iniciar el proyecto npm i poniendo en secuencia las dependencias a utilizar separadas por un espacio y luego presionar ENTER
+
+Run FRONTEND (Ejecute FRONTEND)
+npm start
+
+Built With (Construido Con)
+dotenv
+express
+ejs
+morgan
+path
+mysql
+nodemon
+nodemailer
+Features (Características)
+
+Diseño simple, de fácil comprensión y manejo.
+Con una estructura no muy llamativa pero eficiente, permite acceder fácilmente a la información que se encuentra disponible.
+Está compuesta por la siguiente estructura: 
+VIEWS : Viastas ompletas cuyos estilos estan en Public/Stylesheets
+Partials: se hace uso de HBS para usar header y footer
+Routes: rutas completas que se conectan con los controladores
+Controllers : controladoresde todas las paginas
+Database, tiene la conexión a la base de datos, se verifica por consola
+Public: tiene imagenes, stylesheets, archisvos JS
+
+Nombre de la DB: crud_nodes_db
+Nombre de la TABLA: recomendation
+
+
+Se incluye en vista "Enviado" l verificación del mail 
+image.png
