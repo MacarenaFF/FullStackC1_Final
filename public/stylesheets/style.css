@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Pacifico', sans-serif;
+
+}
+
+.seccionSuperior {
+  background-color: rgb(93, 206, 229);
+  text-align: center;
+  margin: 0em;
+  padding: 0cm;
+
+}
+
+.menuSuperior {
+  list-style: none;
+  text-align: center;
+
+
+}
+
+.menuSuperior li {
+  display: inline-block;
+
+}
+
+.container2 {
+  background-image: url('../img/portada.jpg');
+  background-size: cover;
+  margin: 0%;
+  padding: 1rem;
+  background-repeat: no-repeat;
+
+}
+
+.menuSuperior a {
+  text-decoration: none;
+  background-color: rgb(133, 131, 128);
+  color: rgb(66, 66, 114);
+  text-transform: uppercase;
+  padding: 0.9em;
+  font-size: 0.9em;
+  border-radius: 10px;
+  font-family: 'Pacifico', sans-serif;
+
+}
+
+.menuSuperior a:hover {
+  background-color: white;
+  color: rgb(93, 206, 229);
+
+}
+
+.backgroundContainer {
+  background-color: rgb(93, 206, 229);
+}
+
+.parrafo {
+
+  text-align: justify;
+  font-family: 'Pacifico', sans-serif;
+  color: rgb(66, 66, 114);
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: rgb(93, 206, 229);
+  padding: 1rem;
+
+  border-color: rgb(66, 66, 114);
+  border-style: solid;
+
+}
+
+.nombre {
+  font-family: 'Pacifico', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  background: linear-gradient(#bc1010, #b310bc);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.wrapper {
+  background-image: url(../img/portada.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 280px;
+  grid-template-areas:
+    ". a a ."
+    ". a a .";
+}
+
+.item1 {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  font-family: 'Pacifico', sans-serif;
+  font-size: 120px;
+}
+
+.nav {
+
+  background-color: rgb(93, 206, 229);
+}
+.nav li{
+  margin-left: 1rem;
+}
+.icon-fb {
+  font-size: 1rem;
+  color: gray;
+  margin: 1%;
+}
+
+.icon-ins {
+  font-size: 1rem;
+  color: gray;
+  margin-right: 3%;
+
+}
+
+.icon-pint {
+  font-size: 1rem;
+  color: grey;
+  margin: 1%;
+
+}
+
+.icon-mess {
+  font-size: 1rem;
+  color: grey;
+  margin: 1%;
+
+}
+
+
+.table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(141, 219, 235);
+  color: rgb(66, 66, 114);
+  border-color: rgb(66, 66, 114);
+  border-radius: 10px;
+  table-layout: auto;
+}
+
+.btn {
+  margin: 0.5rem;
+  
+}
+
+/* FOOTER*/
+
+.footerSecciones {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerMenu {
+  list-style: none;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.footerMenu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}

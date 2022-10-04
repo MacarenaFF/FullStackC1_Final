@@ -1,0 +1,127 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.body{
+  background-image: url(../img/portada.jpg);
+  background-size: cover;}
+
+/*....... header*/
+.header{
+  background-color: rgb(93, 206, 229);  
+}
+.button{
+    padding: 1rem;
+    font-family: 'Pacifico', sans-serif;
+}
+.nombre{
+  font-family: 'Pacifico', sans-serif;
+  font-size: 20px;
+  text-align:left;
+  padding-top:  1rem;
+  padding-left: 2rem;
+  background: linear-gradient(#bc1010, #b310bc);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+.container {
+  clear: both;
+  display: flex;
+  padding: 2rem;
+
+}
+
+
+.Sección_1 {
+  background-color: rgb(93, 206, 229);
+  min-height: 900px;
+  column-width: 600px;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 1%;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-family: 'Pacifico', serif;
+  font-size: 48px;
+
+}
+.divisor{
+  padding-bottom: 3rem;
+}
+.title {
+  padding: 2rem;
+}
+.description{
+  font-size: 22px;
+
+}
+.paragraph{
+  display: block;
+  width: 600px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: left;
+  font-size: 22px;
+
+}
+.list{
+  display: block;
+  width: 600px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: left;
+  font-size: 22px;
+}
+
+.Sección_3 {
+  background-color: rgb(93, 206, 229);
+  padding: 2rem;
+  min-height: 450px;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 1%;
+  text-align: center;
+  border-radius: 20px;
+  position: fixed;
+  right: 5%;
+  width: 30%;
+  float: right;
+
+
+}
+
+/* FOOTER*/ 
+
+.footerSecciones{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerMenu{
+  list-style: none;
+  padding: 1rem;
+  text-decoration: none;}
+.footerMenu a{
+  text-decoration: none;
+  color: black;
+   font-size: 1rem;
+}
+

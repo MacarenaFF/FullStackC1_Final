@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .body{
+    background-image: url(../img/portada.jpg);
+    background-size: cover;}
+
+/*....... header*/
+  .header{
+    background-color: rgb(93, 206, 229);
+    
+  }
+  .button{
+   
+      padding: 1rem;
+      font-family: 'Pacifico', sans-serif;
+  
+  }
+  .nombre{
+    font-family: 'Pacifico', sans-serif;
+    font-size: 20px;
+    text-align:left;
+    padding-top:  1rem;
+    padding-left: 2rem;
+    background: linear-gradient(#bc1010, #b310bc);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+  }
+  
+  @keyframes text {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+  
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+/*....... contenido*/
+.contenedorFlex{
+    display: flex;
+    background-image: url(/img/portada.jpg);
+    }
+.contenido{ 
+    
+    padding: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    width: 160%;
+    height: 550px;
+    }
+/* Formulario*/
+.formulario{
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: rgb(93, 206, 229);
+    font-family: 'Open Sans', sans-serif;
+    background-position: center;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: black;
+   }
+
+
+/* FOOTER*/ 
+
+.footerSecciones{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footerMenu{
+    list-style: none;
+    padding: 1rem;
+    text-decoration: none;}
+  .footerMenu a{
+    text-decoration: none;
+    color: black;
+     font-size: 1rem;
+  }
+  
+  
